@@ -155,3 +155,221 @@ input[type="submit"] {
 .card-text span {
     color: black;
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.product2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.hot-label {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.product2 img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.add-basket {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.rating {
+    display: inline-block;
+    font-size: 24px;
+    color: #f1c40f; /* Yıldız rengi */
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+    font-size: inherit;
+}
+
+.full:before {
+    content: "\2605"; 
+    position: absolute;
+}
+
+.half:before {
+    content: "\2605"; 
+    position: absolute;
+    clip: rect(0, 0.5em, 1em, 0);
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: line-through; /* Qiymetin üzerine x cekmek */
+}
+
+.amount {
+    font-size: inherit;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.currency {
+    font-size: 18px;
+}
+
+.amount {
+    font-size: inherit;
+}
+
+.cart{
+    position: fixed;
+    top:0;
+   /* right: 0;*/
+   
+   right:-100%;
+   width: 360px;
+   height: 100vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding: 20px;
+   background-color: var(#e74c3c);
+   box-shadow: -2px solid 4px;
+   border:1px solid var(#f4f4f4);
+   transition: 1.5s;
+
+}
+
+.cart.active{
+    right: 0;
+    transition: .5s;
+
+}
+
+.cart-title{
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.cart-box{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-top: 10px;
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+
+
+}
+.detail-box{
+    display: flex;
+    row-gap: 5px;
+
+}
+.cart-product-title{
+    font-size: 10px;
+    text-transform: uppercase;
+
+}
+
+.cart-price{
+    font-weight: 500;
+
+}
+.cart-quantity{
+    border:1px solid red;
+    outline-color: #f1c40f;
+    width: 200px;
+    text-align: center;
+    font-size: 10px;
+
+}
+.cart-remove{
+    font-size: 24px;
+    color:#f2b2d9;
+    cursor: pointer;
+
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    border-top: 5px solid;
+
+
+}
+.total-title{
+    font-size: 3px;
+    font-weight: 500;
+}
+.total-price{
+    margin-left: 10px;
+
+}
+.btn-buy{
+    display: flex;
+    margin: 10px auto 0 auto;
+    padding: 12px;
+    border: none;
+    background-color: #e74c3c;
+    color:black;
+    font-size: 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.btn-buy :hover{
+    background-color: #f2b2d9;
+}
+#cart-close{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: 10px;
+    color:#f2b2d9;
+    cursor: pointer;
+
+}
